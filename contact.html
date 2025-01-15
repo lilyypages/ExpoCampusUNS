@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content=""with=device-width, initial-scale="1.0">
+    <title>EXPO CAMPUS UNS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+     <section class="sub-header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="image/logo.png"></a>
+            </div>
+            <div class="logoEXPO">
+                <a href="index.html"><img src="image/logoEXPO.png"></a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">ALUMNI'24</a></li>
+                    <li><a href="">CHECK SCORE</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+<!----- contact us ----->
+<section class="contact-pages">
+    <div class="contact-container">
+        <!-- Location Map -->
+        <div class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.1298978141485!2d110.85502751761778!3d-7.560813107861854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a14234667a3fd%3A0xbda63b32997616ad!2sSebelas%20Maret%20University!5e0!3m2!1sen!2sid!4v1736879306372!5m2!1sen!2sid" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <div class="contact-item">
+                <i class="fa fa-home"></i>
+                <div>
+                    <h5>Jalan Ir. Sutami No.36</h5>
+                    <p>Jebres, Surakarta, Jawa Tengah 57126</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fa fa-phone"></i>
+                <div>
+                    <h5>+62 0271-646994</h5>
+                    <p>Monday to Friday, 7AM to 4PM</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fa fa-envelope-o"></i>
+                <div>
+                    <h5>campus@mail.uns.ac.id</h5>
+                    <p>Email us your query</p>
+                </div>
+            </div>
+
+            <!-- Follow Us Section -->
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/UNSOfficial/?locale=id_ID" target="_blank" class="social-icon facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/uns.official/?hl=en" target="_blank" class="social-icon instagram"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://id.linkedin.com/school/universitas-sebelas-maret/" target="_blank" class="social-icon linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://x.com/11MaretUniv" target="_blank" class="social-icon twitter"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!----- footer ----->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.instagram.com/talthsm?igsh=MTZ0ZmV6NG84emt3MA==" target="_blank" class="social-icon">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://id.linkedin.com/in/talitha-sukma-mahardika-0a509a329" target="_blank" class="social-icon">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            <p>
+                <i class="fa fa-copyright" aria-hidden="true"></i> 2024 Talitha Sukma | All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+
+    <!----------- JavaScript for Toggle Menu----------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

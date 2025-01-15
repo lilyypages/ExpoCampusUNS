@@ -1,0 +1,1112 @@
+*{
+    margin: 0;
+    padding: 0;
+    .poppins-thin {
+        font-family: "Poppins", serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      
+      .poppins-extralight {
+        font-family: "Poppins", serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+      
+      .poppins-light {
+        font-family: "Poppins", serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .poppins-regular {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      .poppins-bold {
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(34, 4, 28, 0.863), rgba(34, 4, 28, 0.862)),url(image/banner.jpeg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;  
+}
+nav img{
+    width: 60px;
+}
+.logoEXPO img{
+    border-radius: 100%;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f5ca67;
+    display: block;
+    margin: auto;   
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff2c3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 40px;
+}
+.text-box h2{
+    font-size: 62px;
+}
+.text-box h3{
+    font-size: 30px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.hero-btn:hover{
+    border: 1px solid #f5ca67;
+    background: #f5ca67;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 12.9px;
+    }
+    .text-box h2{
+        font-size: 20px;
+    }
+    .text-box h3{
+        font-size: 9.67px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f5ca67;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .logo{
+        width: 20%;
+    }
+    .logoEXPO img{
+        width: 20%;
+        position: left;
+    }
+    .logoEXPO img{
+        width: 12%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        position: left;
+    }
+}
+
+/*---- opening ----*/
+.opening{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.opening p{
+    font-size: 20px;
+}
+@media(max-width: 700px){
+    .opening p{
+        font-size: 15px;
+    }
+}
+
+
+
+/*---- alumni ----*/
+
+.Alumni{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.row {
+    margin: 2%;
+    box-sizing: border-box;
+}
+
+.row_posters {
+    display: flex;
+    gap: 10px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative; /* Untuk membuat overlay terikat ke container ini */
+    flex-shrink: 0;
+    width: 200px; /* Sesuaikan ukuran gambar */
+    height: 300px; /* Sesuaikan ukuran gambar */
+}
+
+.image-container img {
+    width: 100%; /* Gambar menyesuaikan container */
+    height: 100%; /* Gambar menyesuaikan container */
+    object-fit: cover; /* Menjaga proporsi gambar */
+    transition: transform 450ms;
+}
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.3s linear;
+}
+
+.image-container:hover {
+    transform: scale(1.08);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Warna overlay */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Teks disusun vertikal */
+    opacity: 0; /* Awalnya tidak terlihat */
+    transition: opacity 0.3s ease; /* Animasi muncul */
+    z-index: 1;
+}
+
+.image-container:hover .overlay {
+    opacity: 1; /* Muncul saat hover */
+}
+.row_posters::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .Alumni {
+        width: 90%;
+        padding-top: 50px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .row_posters {
+        display: flex;
+        gap: 5px;
+        padding: 10px;
+        overflow-x: scroll; /* Tetap bisa di-scroll ke samping */
+    }
+
+    .image-container {
+        flex-shrink: 0; /* Pastikan gambar tidak mengecil lebih lanjut */
+        width: 120px; /* Ukuran lebih kecil untuk layar kecil */
+        height: 180px;
+    }
+
+    .overlay {
+        font-size: 12px; /* Ukuran teks lebih kecil */
+    }
+}
+
+
+
+
+
+
+
+
+
+/*----- testimonials -----*/
+
+.testimonials{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.row_testimonials{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+}
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+    background: #fff3f3;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.testimonial-col img{
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.testimonial-col p{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+.testimonial-col h3{    
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: left;
+}
+.testimonial-col h4{    
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: left;
+    color: gray;
+}
+.testimonial-col .fa{
+    color: #f44336;
+    margin-top: 5px;
+}
+
+@media(max-width: 700){
+    .testimonial-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+/* Responsiveness for small devices */
+@media (max-width: 768px) {
+    .row_testimonials {
+        padding: 30px; 
+        gap: 15px;
+    }
+    .testimonial-col {
+        flex-basis: 100%; 
+        padding: 10px;
+    }
+    .testimonial-col h3 {
+        font-size: 14px;
+    }
+    .testimonial-col h4 {
+        font-size: 12px;
+    }
+    .testimonial-col p {
+        font-size: 13px;
+    }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
+    .testimonials {
+        padding-top: 50px; 
+    }
+    .row_testimonials {
+        gap: 10px; 
+    }
+    .testimonial-col {
+        padding: 8px;
+    }
+    .testimonial-col img {
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+    }
+    .testimonial-col h3 {
+        font-size: 13px;
+    }
+    .testimonial-col h4 {
+        font-size: 11px;
+    }
+    .testimonial-col p {
+        font-size: 12px;
+    }
+}
+
+/*----- study at UNS -----*/
+
+.saUNS{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.384),rgba(0, 0, 0, 0.38)),url(image/banner2.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px 0;
+}
+.saUNS h1{
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 0;
+}
+@media(max-width: 700px){
+    .saUNS h1{
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+/*---- about UNS page ----*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(34, 4, 28, 0.862),rgba(34, 4, 28, 0.862)),url(image/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff2c3;
+}
+.about-uns {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0 50px; /* Gabungan padding atas dan bawah */
+    text-align: center; /* Supaya teks dan elemen terasa lebih di tengah */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Responsif di layar kecil */
+    align-items: center;
+    justify-content: center; /* Menempatkan elemen lebih ke tengah */
+    gap: 20px; /* Menambahkan jarak antar elemen */
+}
+
+.about-col {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify; /* Teks paragraf rata kiri-kanan */
+}
+
+.about-col img {
+    width: 300px;
+    height: 450px;
+    border-radius: 8px; /* Membuat gambar lebih modern dengan sudut melengkung */
+    max-width: 100%; /* Gambar akan menyesuaikan lebar container */
+    margin: auto; /* Menempatkan gambar di tengah */
+    display: block; /* Pastikan gambar jadi block untuk margin auto bekerja */
+}
+
+.about-col h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; /* Judul di tengah */
+}
+
+.about-col p {
+    font-size: 16px;
+    line-height: 1.8; /* Memberikan spasi antar baris yang nyaman */
+    color: #555;
+}
+
+
+
+/*----kampus inklusif-----*/
+.kampus-inklusif {
+    padding: 20px 40px;
+    background-color: transparent; 
+    line-height: 1.6;
+}
+
+.kampus-inklusif .row {
+    display: flex;
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
+    align-items: center; /* Posisikan elemen di tengah secara vertikal */
+    gap: 20px;
+}
+
+.kampus-inklusif .about-inlusif-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Jarak antara gambar */
+    align-items: center;
+}
+
+.kampus-inklusif .about-inlusif-col img {
+    max-width: 80%;
+    border-radius: 10px; /* Membuat gambar dengan sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut */
+}
+
+.kampus-inklusif .about-inklusif-col {
+    flex: 1;
+    color: #555; /* Warna teks utama */
+    padding: 20px;
+}
+
+.kampus-inklusif .about-inklusif-col h1 {
+    font-size: 28px; /* Ukuran font heading */
+    color: #333; 
+    margin-bottom: 15px;
+}
+
+.kampus-inklusif .about-inklusif-col p {
+    margin-bottom: 15px; /* Jarak antar paragraf */
+    text-align: justify; /* Teks rata kiri-kanan */
+}
+
+/* Media Query untuk layar kecil */
+@media (max-width: 600px) {
+    .sub-header {
+        height: 30vh; /* Tinggi lebih kecil di layar kecil */
+        background-size: contain; /* Agar gambar tetap terlihat proporsional */
+    }
+
+    .about-uns {
+        width: 90%; /* Lebar lebih kecil untuk layar kecil */
+        padding: 40px 0; /* Sesuaikan padding */
+    }
+
+    .row {
+        gap: 10px; /* Kurangi jarak antar elemen */
+    }
+
+    .about-col img {
+        width: 100%; /* Gambar menyesuaikan layar kecil */
+        height: auto; /* Hindari deformasi */
+    }
+
+    .about-col h1 {
+        font-size: 22px; /* Ukuran lebih kecil */
+    }
+
+    .about-col p {
+        font-size: 14px; /* Ukuran teks lebih kecil */
+    }
+
+    .kampus-inklusif {
+        padding: 10px 20px; /* Sesuaikan padding */
+    }
+
+    .kampus-inklusif .about-inlusif-col img {
+        max-width: 100%; /* Gambar menyesuaikan layar kecil */
+    }
+
+    .kampus-inklusif .about-inklusif-col h1 {
+        font-size: 20px; /* Heading lebih kecil */
+    }
+
+    .kampus-inklusif .about-inklusif-col p {
+        font-size: 14px; /* Teks lebih kecil */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*alumni*/
+
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.jurusan {
+    margin-bottom: 40px;
+}
+
+.jurusan h2 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    .jurusan h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .jurusan h2 {
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+/*----- check score -----*/
+.sub-body{
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(34, 4, 28, 0.863),rgba(34, 4, 28, 0.862)),url(image/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff2c3;
+}
+
+.search-box {
+    width: 600px;
+    background: transparent;
+    margin: 200px auto;
+    border-radius: 5px;
+}
+
+.sub-row {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff2c3;
+    border-radius: 5px;
+}
+
+input {
+    flex: 1;
+    height: 20px;
+    background: #fff2c3;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #333;
+    padding-top: 10px;
+}
+
+button {
+    background: #fff2c3;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button .fa-search {
+    font-size: 20px;
+    color: #333;
+    padding-top: 10px;
+}
+::placeholder{
+    color: #555;
+}
+
+.result-box {
+    max-height: 100px;
+    overflow-y: auto;
+    background: transparent;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid #ddd;
+    text-align: left;
+}
+
+.result-box ul {
+    border-top: 1px;
+    padding: 15px 10px;
+    margin: 0;
+}
+
+.result-box ul li {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background: #fff2c3;
+    border-radius: 1px;
+    width: 600px;
+}
+
+.result-box ul li:hover {
+    background: #f0f0f0;
+    color: #000;
+}
+.result-box{
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.result-item {
+    margin: 10px 0;
+    background: #fff2c3;
+    color: #333;
+    border: 1px solid #22041cdc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.dropdown-content {
+    padding: 10px;
+    background: #fff2c3;
+    border-top: 1px solid #ddd;
+    display: none;
+}
+
+.dropdown-icon {
+    margin-left: 10px; 
+    color: #555; 
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+.dropdown-icon.active {
+    transform: rotate(180deg); 
+    color: #000; 
+}
+
+/* Media Query untuk layar kecil */
+@media (max-width: 600px) {
+    .search-box {
+        width: 80%;
+        margin: 100px auto;
+    }
+
+    .sub-row {
+        flex-direction: row;
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    input {
+        font-size: 16px;
+        padding: 5px;
+        height: auto;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 2px;
+    }
+
+    .result-box ul li {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .result-item {
+        font-size: 14px;
+    }
+
+    .dropdown-btn {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------- contact us page -----*/
+/* Contact Page Container */
+.contact-pages {
+    padding: 50px;
+    padding-top: 50px;
+}
+
+/* Contact Container for side by side layout */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Add space between map and contact information */
+    align-items: flex-start;
+}
+
+/* Location Map */
+.location iframe {
+    width: 280%; /* Map takes up 70% of the width */
+    height: 365px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Contact Information Section */
+.contact-info {
+    width: 20%; /* Contact information takes up 28% of the width */
+    padding: 20px;
+    background-color: #fffff8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Contact Item Styling */
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-item i {
+    font-size: 30px;
+    color: #8815c2;
+    margin-right: 15px;
+}
+
+.contact-item h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.contact-item p {
+    font-size: 14px;
+    margin: 5px 0 0;
+    color: #555;
+}
+
+/* Follow Us Section */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.social-links ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+}
+
+.social-links ul li {
+    margin: 0 10px;
+}
+
+.social-icon {
+    font-size: 30px;
+    color: #555;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #8815c2;
+}
+
+
+
+/* Responsive Design for Contact Us Page */
+@media screen and (max-width: 768px) {
+    /* Contact Page Container */
+    .contact-pages {
+        padding: 20px;
+    }
+
+    /* Stack Contact Container vertically */
+    .contact-container {
+        display: block;
+        gap: 0; /* Remove gap since items will stack */
+    }
+
+    /* Adjust Map width and height */
+    .location iframe {
+        width: 100%; /* Take up full width of container */
+        height: 250px; /* Adjust height for smaller screens */
+    }
+
+    /* Adjust Contact Information width and padding */
+    .contact-info {
+        width: 100%; /* Full width for stacking */
+        padding: 15px;
+        margin-top: 20px; /* Add spacing between map and contact info */
+    }
+
+    /* Adjust Contact Item Spacing */
+    .contact-item {
+        margin-bottom: 15px;
+    }
+
+    .contact-item i {
+        font-size: 24px; /* Reduce icon size */
+        margin-right: 10px;
+    }
+
+    .contact-item h5 {
+        font-size: 16px; /* Adjust text size */
+    }
+
+    .contact-item p {
+        font-size: 12px; /* Smaller text for smaller screens */
+    }
+
+    /* Social Links Section */
+    .social-links ul {
+        flex-wrap: wrap; /* Allow icons to wrap to the next line if needed */
+        justify-content: center; /* Center icons on smaller screens */
+    }
+
+    .social-links ul li {
+        margin: 10px; /* Add spacing between social icons */
+    }
+
+    .social-icon {
+        font-size: 24px; /* Adjust icon size for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----footer-----*/
+
+
+.footer {
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+}
+
+.footer .social-links {
+    margin-bottom: 10px;
+}
+
+.footer .social-links .social-icon {
+    margin: 0 10px;
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .social-links .social-icon:hover {
+    color: #0077b5; /* LinkedIn blue */
+}
+
+.footer .social-links .social-icon i.fa-instagram:hover {
+    color: #E4405F; /* Instagram pink */
+}
+
+.footer .copyright {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.footer .copyright i {
+    margin-right: 5px;
+}
+
+
+
+/*-----footer only for chechk score-----*/
+.sub-footer {
+    background-color: transparent;
+    color: #fff2c3;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+}
+
+.sub-footer .social-links {
+    margin-bottom: 10px;
+}
+
+.sub-footer .social-links .social-icon {
+    margin: 0 10px;
+    font-size: 1.2em;
+    color: #fff2c3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sub-footer .social-links .social-icon:hover {
+    color: #0077b5; /* LinkedIn blue */
+}
+
+.sub-footer .social-links .social-icon i.fa-instagram:hover {
+    color: #E4405F; /* Instagram pink */
+}
+
+.sub-footer .copyright {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.sub-footer .copyright i {
+    margin-right: 5px;
+}

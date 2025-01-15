@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content=""with=device-width, initial-scale="1.0">
+    <title>EXPO CAMPUS UNS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+     <section class="sub-header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="image/logo.png"></a>
+            </div>
+            <div class="logoEXPO">
+                <a href="index.html"><img src="image/logoEXPO.png"></a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">ALUMNI'24</a></li>
+                    <li><a href="">CHECK SCORE</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>About UNS</h1>
+    </section>
+
+            <!----- abous uns content ----->
+    <section class="about-uns">
+        <div class="row">
+            <div class="about-col">
+                <h1>UNIVERSITAS SEBELAS MARET</h1>
+                <p>Universitas Sebelas Maret (UNS) adalah universitas negeri terkemuka yang berlokasi di Surakarta, Indonesia, didirikan 
+                    pada tahun 1976. UNS menawarkan berbagai program studi yang beragam di 14 fakultas, termasuk seni, sains, teknik, 
+                    kedokteran, dan ilmu sosial. Dengan lebih dari 36.000 mahasiswa, UNS menekankan pendekatan pendidikan holistik yang 
+                    mengintegrasikan pembelajaran akademik dengan pengabdian masyarakat dan pengembangan pribadi.</p>
+                <p>UNS secara konsisten menduduki peringkat sebagai salah satu universitas terbaik di Indonesia dan telah menerima berbagai 
+                    penghargaan atas program akademik dan kontribusi penelitiannya. Moto institusi ini, "Mangesthi Luhur Ambangun Nagara!" 
+                    dapat diartikan sebagai memiliki cita-cita mulia untuk membangun bangsa.</p>
+            </div>
+            <div class="about-col">
+                <img src="image/about.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section class="kampus-inklusif">
+        <div class="row">
+            <div class="about-inlusif-col">
+                <img src="image/inklusif.webp">
+                <img src="image/inklusif2.jpeg">
+            </div>
+            <div class="about-inklusif-col">
+                <h1> UNS Kampus Inklusif</h1>
+                <p>Universitas Sebelas Maret (UNS) merupakan kampus inklusif yang berkomitmen untuk menyediakan lingkungan pendidikan 
+                    yang ramah bagi penyandang disabilitas. Sejak menerima Inclusive Education Award pada tahun 2012, UNS telah 
+                    mengembangkan berbagai fasilitas aksesibilitas, seperti ramp, lift, toilet khusus, dan jalur pemandu untuk tunanetra. 
+                    Selain itu, program Pengenalan Kehidupan Kampus bagi Mahasiswa Baru (PKKMB) dirancang untuk membantu mahasiswa difabel 
+                    beradaptasi dengan kehidupan akademik melalui pendampingan dan dukungan khusus.</p>
+                <p>UNS juga menerapkan jalur afirmasi bagi mahasiswa penyandang disabilitas yang tidak melalui ujian tradisional, 
+                    memudahkan mereka dalam proses penerimaan. Dengan upaya ini, UNS berkomitmen untuk memastikan semua mahasiswa, 
+                    tanpa terkecuali, dapat merasakan pengalaman belajar yang optimal dan berkontribusi dalam komunitas akademik 
+                    yang beragam.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!----- footer ----->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.instagram.com/talthsm?igsh=MTZ0ZmV6NG84emt3MA==" target="_blank" class="social-icon">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://id.linkedin.com/in/talitha-sukma-mahardika-0a509a329" target="_blank" class="social-icon">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            <p>
+                <i class="fa fa-copyright" aria-hidden="true"></i> 2024 Talitha Sukma | All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+
+    <!----------- JavaScript for Toggle Menu----------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
